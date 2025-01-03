@@ -30,7 +30,7 @@ def lFlag(fileName):
             if os.path.exists(fileName):
         
                 count = 0
-                with open('./test.txt', "rb") as f:
+                with open(f'{fileName}', "rb") as f:
                     for i, _ in enumerate(f):
                         count += 1
                 print(count, end=" ")
